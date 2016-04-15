@@ -1,0 +1,17 @@
+$nb-columns: 12;
+$max-width: 68.75em;
+
+// mobile-1 20em (320px) 
+$breakpoint-mobile-1: "only screen and (min-width : 20em)";
+// mobile-2 (480px) 
+$breakpoint-mobile-2: "only screen and (min-width : 30em)";
+// tablet-1 (600px) 
+$breakpoint-tablet-1: "only screen and (min-width: 37.5em)";
+// tablet-2 (768px) 
+$breakpoint-tablet-2: "only screen and (min-width : 48em)";
+// tablet-3 (900px) 
+$breakpoint-tablet-3: "only screen and (min-width : 56.25em)";
+// desktop-1 (1100px) 
+$breakpoint-desktop-1: "only screen and (min-width : 68.75em)";
+// desktop-2 (1300px) 
+$breakpoint-desktop-2: "only screen and (min-width : 81.25em)";

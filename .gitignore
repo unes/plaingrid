@@ -1,0 +1,15 @@
+.DS_Store
+Desktop.ini
+._*
+Thumbs.db
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.localized
+.cache
+.sass-cache
+.backup

@@ -1,0 +1,55 @@
+// @import "normalize";
+@import "settings";
+@import "mixins";
+
+// IF NOT INCLUDED
+*, *:after, *:before {
+	margin: 0;
+	padding: 0;
+	@include borderbox;
+}
+	
+img {
+	max-width: 100%;
+}	
+
+.wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.wrap, .row {
+	@extend %clearfix;
+}
+	 
+[class*='col-'] {
+	float: left;
+	padding: 1em;
+	width: 100%;
+	min-height: 1px; 
+}	
+
+.wrap [class*='.col-']:last-of-type {
+  padding-right: 0;
+}
+
+.wrap .inner {
+	display: block;
+	background-color: #259CC7;
+	padding: 0.85em;
+	text-align: center;
+	color: #fff;
+	font: bold 1.7em 'Helvetica', sans-serif;
+}
+
+@media #{$breakpoint-mobile-2} {
+	.wrap {		
+		width: 95%;
+		max-width: $max-width;		
+	}
+	@for $i from 1 through $nb-columns {	  	
+	  	.col-#{$i} { 		
+	  		width: 100% / $nb-columns * $i;	
+  		}	  		
+	}	
+}	
