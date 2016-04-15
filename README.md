@@ -1,2 +1,4 @@
 # plaingrid
-(Very) Basic mobile-first CSS Grid with SASS
+Simple responsive grid system with SASS. 
+
+###### do not use for production.
